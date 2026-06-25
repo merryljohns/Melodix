@@ -6,6 +6,7 @@ Melodix is a responsive, multi-page web application featuring a sleek, dark synt
 To run the project locally:
 1. Clone this repository or download the project files.
 2. Open `index.html` in your favorite web browser, or use a local development server like VS Code Live Server.
+3. Check out the project at https://melodix-ebon.vercel.app/
 
 ---
 
