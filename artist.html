@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Profile - Neon Shredder</title>
+    <meta name="description" content="Get to know Neon Shredder. Read the biography, find booking contact info, and stream popular guitar loops directly.">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- --- Header / Navigation --- -->
+    <header class="header scrolled" id="main-header">
+        <div class="container nav-container">
+            <!-- SVG Logo -->
+            <a href="index.html" class="logo" id="logo-link">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#8e2de2" />
+                            <stop offset="100%" stop-color="#f000ff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M16 2C8.268 2 2 8.268 2 16v8a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H4v-1c0-6.627 5.373-12 12-12s12 5.373 12 12v1h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h3a3 3 0 0 0 3-3v-8c0-7.732-6.268-14-14-14z" />
+                </svg>
+                <span>MELODIX</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link" id="nav-home">Home</a>
+                <a href="music.html" class="nav-link" id="nav-music">Music</a>
+                <a href="artist.html" class="nav-link active" id="nav-artist">Artist</a>
+                <a href="about.html" class="nav-link" id="nav-about">About</a>
+                <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <span id="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- Main Profile Content --- -->
+    <main class="container artist-profile-section section-padding">
+        <div class="artist-profile-grid">
+            
+            <!-- Left Side: Profile Photo & Socials Card -->
+            <aside class="artist-photo-card">
+                <div class="artist-img-wrapper">
+                    <img src="images/artist.png" alt="Neon Shredder close up portrait">
+                </div>
+                
+                <div class="artist-socials">
+                    <a href="#" class="social-circle-btn" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-circle-btn" aria-label="Instagram">📸</a>
+                    <a href="#" class="social-circle-btn" aria-label="YouTube">📺</a>
+                    <a href="#" class="social-circle-btn" aria-label="Spotify">🎵</a>
+                </div>
+            </aside>
+
+            <!-- Right Side: Details & Tracks -->
+            <section class="artist-details-content">
+                <span class="hero-subtitle">Featured Artist</span>
+                <h1>NEON <span class="text-gradient">SHREDDER</span></h1>
+                
+                <p class="artist-bio">
+                    Neon Shredder is an award-winning guitarist, electronic music synthesizer, and visual producer. Blending the heavy distortion of 80s grunge rock with digital futuristic synthwave drums, Shredder crafts dark neon soundscapes that are highly sought after by streaming creators and night-club coordinators around the globe.
+                </p>
+
+                <!-- Metadata details list -->
+                <div class="artist-meta-list">
+                    <div class="artist-meta-item">
+                        <h5>Origin</h5>
+                        <p>Seattle / Cyber-Tokyo</p>
+                    </div>
+                    <div class="artist-meta-item">
+                        <h5>Genres</h5>
+                        <p>Synth-Rock, Cyber-Grunge</p>
+                    </div>
+                    <div class="artist-meta-item">
+                        <h5>Booking Phone</h5>
+                        <p>+1 555-0245</p>
+                    </div>
+                    <div class="artist-meta-item">
+                        <h5>Booking Email</h5>
+                        <p>shred@melodixmusic.com</p>
+                    </div>
+                </div>
+
+                <!-- Popular Songs list (with fully functional integration) -->
+                <div class="artist-popular-tracks">
+                    <h3>Popular Tracks</h3>
+                    
+                    <div class="playlist-container">
+                        <!-- Track 2 (Neon Shredder primary track) -->
+                        <div class="playlist-item" data-id="2" data-title="Midnight Shredder" data-artist="Neon Shredder" data-audio="audio/track2.wav" data-cover="images/cover2.png" data-phone="+1 555-0245">
+                            <div class="playlist-item-left">
+                                <button class="circle-play-btn card-play-trigger" aria-label="Play Midnight Shredder">
+                                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </button>
+                                <div class="playlist-item-info">
+                                    <h4>Midnight Shredder</h4>
+                                    <p>Primary Guitar Pluck</p>
+                                </div>
+                            </div>
+                            <div class="playlist-waveform">
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar" style="height: 18px;"></div>
+                                <div class="wave-bar" style="height: 22px;"></div>
+                                <div class="wave-bar" style="height: 12px;"></div>
+                                <div class="wave-bar"></div>
+                            </div>
+                            <div class="playlist-item-right">
+                                <span class="playlist-duration">0:06</span>
+                            </div>
+                        </div>
+
+                        <!-- Track 1 (Guest track) -->
+                        <div class="playlist-item" data-id="1" data-title="Neon Horizon" data-artist="Cyberpunk DJ" data-audio="audio/track1.wav" data-cover="images/cover1.png" data-phone="+1 555-0199">
+                            <div class="playlist-item-left">
+                                <button class="circle-play-btn card-play-trigger" aria-label="Play Neon Horizon">
+                                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </button>
+                                <div class="playlist-item-info">
+                                    <h4>Neon Horizon</h4>
+                                    <p>Synth Bass backing</p>
+                                </div>
+                            </div>
+                            <div class="playlist-waveform">
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar" style="height: 16px;"></div>
+                                <div class="wave-bar" style="height: 20px;"></div>
+                                <div class="wave-bar" style="height: 14px;"></div>
+                                <div class="wave-bar"></div>
+                            </div>
+                            <div class="playlist-item-right">
+                                <span class="playlist-duration">0:06</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; display: flex; gap: 16px; justify-content: center;">
+                    <a href="music.html" class="btn btn-secondary">&larr; Back to Library</a>
+                    <a href="contact.html" class="btn btn-primary">Book Neon Shredder</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- --- Sticky Bottom Player Bar --- -->
+    <div class="player-bar" id="global-player-bar">
+        <div class="container player-container">
+            <!-- Track Details -->
+            <div class="player-track-info">
+                <div class="player-cover">
+                    <img id="player-track-cover" src="images/cover1.png" alt="Current Album Cover">
+                </div>
+                <div class="player-text">
+                    <div class="player-title" id="player-track-title">Song Title</div>
+                    <div class="player-artist" id="player-track-artist">Artist Name</div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="player-controls">
+                <div class="player-buttons">
+                    <button class="player-btn" id="player-prev-btn" title="Previous Track" aria-label="Previous Track">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6L18 6v12z"/></svg>
+                    </button>
+                    <button class="player-btn player-btn-main" id="player-play-btn" title="Play/Pause" aria-label="Play/Pause">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" id="player-play-icon"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="player-btn" id="player-next-btn" title="Next Track" aria-label="Next Track">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6zm9-12h2v12h-2z"/></svg>
+                    </button>
+                </div>
+                
+                <div class="player-progress-container">
+                    <span class="player-time player-time-start" id="player-time-current">0:00</span>
+                    <div class="progress-bar-bg" id="player-progress-bg">
+                        <div class="progress-bar-fill" id="player-progress-fill">
+                            <div class="progress-knob"></div>
+                        </div>
+                    </div>
+                    <span class="player-time player-time-end" id="player-time-total">0:00</span>
+                </div>
+            </div>
+
+            <!-- Additional Actions (Volume & Favorites) -->
+            <div class="player-actions">
+                <button class="card-action-btn" id="player-fav-btn" title="Toggle Favorite" aria-label="Toggle Favorite">
+                    ♥
+                </button>
+                <div class="volume-container">
+                    <svg class="volume-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    <div class="volume-slider-bg" id="player-volume-bg">
+                        <div class="volume-slider-fill" id="player-volume-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --- Footer --- -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-logo-side">
+                <a href="index.html" class="logo">
+                    <svg viewBox="0 0 32 32" aria-hidden="true" style="width: 28px; height: 28px;">
+                        <path d="M16 2C8.268 2 2 8.268 2 16v8a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H4v-1c0-6.627 5.373-12 12-12s12 5.373 12 12v1h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h3a3 3 0 0 0 3-3v-8c0-7.732-6.268-14-14-14z" />
+                    </svg>
+                    <span>MELODIX</span>
+                </a>
+                <p>Delivering high-fidelity neon rock tunes and loops. Synthesized soundscapes for creative minds.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="music.html">Music</a>
+                    <a href="artist.html">Artist</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Licensing Info</a>
+                    <a href="#">Copyright Registry</a>
+                </div>
+            </div>
+
+            <div class="footer-col footer-subscribe-side">
+                <h4>Subscribe Our Newsletter</h4>
+                <p>Stay updated on new album drops, loop kits, and live shows.</p>
+                <form class="subscribe-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter successfully!'); this.reset();">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>
+                &copy; 2026 Melodix Music. All rights reserved. Made for creators.
+            </div>
+            <div class="footer-social-links">
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="YouTube">📺</a>
+                <a href="#" aria-label="Discord">💬</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/player.js"></script>
+</body>
+</html>

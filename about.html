@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Melodix - Project Overview</title>
+    <meta name="description" content="Discover the story behind Melodix. Explore its interactive features, technologies used, and our creative development team.">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- --- Header / Navigation --- -->
+    <header class="header scrolled" id="main-header">
+        <div class="container nav-container">
+            <!-- SVG Logo -->
+            <a href="index.html" class="logo" id="logo-link">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#8e2de2" />
+                            <stop offset="100%" stop-color="#f000ff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M16 2C8.268 2 2 8.268 2 16v8a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H4v-1c0-6.627 5.373-12 12-12s12 5.373 12 12v1h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h3a3 3 0 0 0 3-3v-8c0-7.732-6.268-14-14-14z" />
+                </svg>
+                <span>MELODIX</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link" id="nav-home">Home</a>
+                <a href="music.html" class="nav-link" id="nav-music">Music</a>
+                <a href="artist.html" class="nav-link" id="nav-artist">Artist</a>
+                <a href="about.html" class="nav-link active" id="nav-about">About</a>
+                <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <span id="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- Page Header --- -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">About <span class="text-gradient">Melodix</span></h1>
+            <p class="page-subtitle">Learn about our mission, our premium features, the technologies powering the sound, and the development team.</p>
+        </div>
+    </header>
+
+    <!-- --- Main Content Section --- -->
+    <main class="container section-padding">
+        
+        <!-- Project Overview -->
+        <section style="margin-bottom: 80px;">
+            <div class="promo-grid">
+                <div>
+                    <h2 class="section-title">Project <span class="text-gradient">Overview</span></h2>
+                    <p class="section-desc" style="font-size: 17px; line-height: 1.8;">
+                        Melodix is a next-generation, high-performance responsive web template built specifically for rock bands, electronic DJs, and synthwave producers. Designed with a dark neon, high-contrast aesthetic, Melodix provides an immersive music listening platform directly in the browser. 
+                    </p>
+                    <p class="section-desc" style="font-size: 17px; line-height: 1.8; margin-top: 15px;">
+                        Our core mission is to enable independent artists to exhibit their audio portfolios in a premium-feeling environment while keeping the implementation details completely lightweight, responsive, and cross-platform.
+                    </p>
+                </div>
+                <div class="promo-image-container">
+                    <img src="images/hero_guitarist.png" alt="Concept design image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Website Features -->
+        <section style="margin-bottom: 80px;">
+            <h2 class="section-title text-center" style="text-align: center; margin-bottom: 10px;">Website <span class="text-gradient">Features</span></h2>
+            <p class="section-desc text-center" style="text-align: center; margin-bottom: 40px;">Explore the premium interactive capabilities baked directly into this template.</p>
+            
+            <div class="about-features">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <!-- Headphone icon svg -->
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/></svg>
+                    </div>
+                    <h3>Interactive Audio</h3>
+                    <p>Stream synthesized 16-bit WAV loops locally. Play tracks using the sticky bottom control player featuring timeline scrub, duration tracking, and volume adjustment.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <!-- Heart icon svg -->
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h3>Favorites Playlist</h3>
+                    <p>Bookmark your preferred audio loops. Favorites persist across sessions via client-side LocalStorage. Filters can isolate favorited tracks instantly.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <!-- Filter icon svg -->
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+                    </div>
+                    <h3>Search &amp; Artist Filters</h3>
+                    <p>Locate specific sounds instantly. Real-time text search matches titles and artists while responsive query buttons isolate specific performer lists.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Used -->
+        <section class="tech-stack-section" style="margin-bottom: 80px;">
+            <h2 class="section-title text-center" style="text-align: center; margin-bottom: 10px;">Technologies <span class="text-gradient">Used</span></h2>
+            <p class="section-desc text-center" style="text-align: center; margin-bottom: 40px;">Standard, lightweight, and modern web tech designed for fast loading times.</p>
+            
+            <div class="tech-grid">
+                <!-- Tech 1 -->
+                <div class="tech-card">
+                    <div class="tech-logo">🌐</div>
+                    <h4>HTML5</h4>
+                    <p>Descriptive layout markup</p>
+                </div>
+                <!-- Tech 2 -->
+                <div class="tech-card">
+                    <div class="tech-logo">🎨</div>
+                    <h4>CSS3 Variables</h4>
+                    <p>Dynamic custom variables</p>
+                </div>
+                <!-- Tech 3 -->
+                <div class="tech-card">
+                    <div class="tech-logo">⚡</div>
+                    <h4>JavaScript (ES6+)</h4>
+                    <p>Interactive DOM controls</p>
+                </div>
+                <!-- Tech 4 -->
+                <div class="tech-card">
+                    <div class="tech-logo">🔊</div>
+                    <h4>Web Audio API</h4>
+                    <p>High-fidelity audio stream</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Details -->
+        <section style="border-top: 1px solid var(--glass-border); padding-top: 80px;">
+            <div class="promo-grid" style="align-items: center;">
+                <div class="promo-image-container" style="aspect-ratio: 1/1; max-width: 400px; margin: 0 auto;">
+                    <img src="images/artist.png" alt="Developer representative">
+                </div>
+                <div>
+                    <h2 class="section-title">Developer <span class="text-gradient">Details</span></h2>
+                    <p class="section-desc" style="font-size: 16px; line-height: 1.8;">
+                        This website template was developed by <strong>Antigravity Design Lab</strong>. We build premium, high-impact web resources using clean, modular code bases that align with top-tier graphic mockups.
+                    </p>
+                    
+                    <div style="margin-top: 24px; border-left: 3px solid var(--accent-magenta); padding-left: 16px;">
+                        <h4 style="font-size: 16px; font-weight: 700;">Antigravity Team</h4>
+                        <p style="font-size: 14px; color: var(--text-secondary); margin-top: 4px;">Pair programming with Gemini Advanced Agentic Coding system.</p>
+                        <p style="font-size: 14px; color: var(--text-secondary);">Contact: support@antigravitydesign.com</p>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- --- Sticky Bottom Player Bar --- -->
+    <div class="player-bar" id="global-player-bar">
+        <div class="container player-container">
+            <!-- Track Details -->
+            <div class="player-track-info">
+                <div class="player-cover">
+                    <img id="player-track-cover" src="images/cover1.png" alt="Current Album Cover">
+                </div>
+                <div class="player-text">
+                    <div class="player-title" id="player-track-title">Song Title</div>
+                    <div class="player-artist" id="player-track-artist">Artist Name</div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="player-controls">
+                <div class="player-buttons">
+                    <button class="player-btn" id="player-prev-btn" title="Previous Track" aria-label="Previous Track">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6L18 6v12z"/></svg>
+                    </button>
+                    <button class="player-btn player-btn-main" id="player-play-btn" title="Play/Pause" aria-label="Play/Pause">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" id="player-play-icon"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="player-btn" id="player-next-btn" title="Next Track" aria-label="Next Track">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6zm9-12h2v12h-2z"/></svg>
+                    </button>
+                </div>
+                
+                <div class="player-progress-container">
+                    <span class="player-time player-time-start" id="player-time-current">0:00</span>
+                    <div class="progress-bar-bg" id="player-progress-bg">
+                        <div class="progress-bar-fill" id="player-progress-fill">
+                            <div class="progress-knob"></div>
+                        </div>
+                    </div>
+                    <span class="player-time player-time-end" id="player-time-total">0:00</span>
+                </div>
+            </div>
+
+            <!-- Additional Actions (Volume & Favorites) -->
+            <div class="player-actions">
+                <button class="card-action-btn" id="player-fav-btn" title="Toggle Favorite" aria-label="Toggle Favorite">
+                    ♥
+                </button>
+                <div class="volume-container">
+                    <svg class="volume-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    <div class="volume-slider-bg" id="player-volume-bg">
+                        <div class="volume-slider-fill" id="player-volume-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --- Footer --- -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-logo-side">
+                <a href="index.html" class="logo">
+                    <svg viewBox="0 0 32 32" aria-hidden="true" style="width: 28px; height: 28px;">
+                        <path d="M16 2C8.268 2 2 8.268 2 16v8a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H4v-1c0-6.627 5.373-12 12-12s12 5.373 12 12v1h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h3a3 3 0 0 0 3-3v-8c0-7.732-6.268-14-14-14z" />
+                    </svg>
+                    <span>MELODIX</span>
+                </a>
+                <p>Delivering high-fidelity neon rock tunes and loops. Synthesized soundscapes for creative minds.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="music.html">Music</a>
+                    <a href="artist.html">Artist</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Licensing Info</a>
+                    <a href="#">Copyright Registry</a>
+                </div>
+            </div>
+
+            <div class="footer-col footer-subscribe-side">
+                <h4>Subscribe Our Newsletter</h4>
+                <p>Stay updated on new album drops, loop kits, and live shows.</p>
+                <form class="subscribe-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter successfully!'); this.reset();">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>
+                &copy; 2026 Melodix Music. All rights reserved. Made for creators.
+            </div>
+            <div class="footer-social-links">
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="YouTube">📺</a>
+                <a href="#" aria-label="Discord">💬</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/player.js"></script>
+</body>
+</html>

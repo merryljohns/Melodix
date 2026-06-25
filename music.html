@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library - Melodix</title>
+    <meta name="description" content="Browse our exclusive premium neon music collection. Play local tracks, search by title, and filter by your favorite artists.">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- --- Header / Navigation --- -->
+    <header class="header scrolled" id="main-header">
+        <div class="container nav-container">
+            <!-- SVG Logo -->
+            <a href="index.html" class="logo" id="logo-link">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#8e2de2" />
+                            <stop offset="100%" stop-color="#f000ff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M16 2C8.268 2 2 8.268 2 16v8a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H4v-1c0-6.627 5.373-12 12-12s12 5.373 12 12v1h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h3a3 3 0 0 0 3-3v-8c0-7.732-6.268-14-14-14z" />
+                </svg>
+                <span>MELODIX</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link" id="nav-home">Home</a>
+                <a href="music.html" class="nav-link active" id="nav-music">Music</a>
+                <a href="artist.html" class="nav-link" id="nav-artist">Artist</a>
+                <a href="about.html" class="nav-link" id="nav-about">About</a>
+                <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <span id="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- Page Header --- -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Music <span class="text-gradient">Library</span></h1>
+            <p class="page-subtitle">Search, filter, and stream our ultra-exclusive, offline-playable synthesised loop sets.</p>
+        </div>
+    </header>
+
+    <!-- --- Main Content (Grid, Search, Filter) --- -->
+    <main class="container section-padding">
+        
+        <!-- Controls Bar (Search & Filters) -->
+        <section class="controls-bar">
+            <!-- Search Box -->
+            <div class="search-box">
+                <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                <input type="text" id="music-search" placeholder="Search track or artist name..." aria-label="Search music">
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-group" id="artist-filters">
+                <button class="filter-btn active" data-filter="all">All Tracks</button>
+                <button class="filter-btn" data-filter="Cyberpunk DJ">Cyberpunk DJ</button>
+                <button class="filter-btn" data-filter="Neon Shredder">Neon Shredder</button>
+                <button class="filter-btn" data-filter="Electro Shock">Electro Shock</button>
+                <button class="filter-btn" data-filter="favorites">★ Favorites</button>
+            </div>
+        </section>
+
+        <!-- Music Card Grid -->
+        <section class="music-grid" id="music-card-grid">
+            
+            <!-- Card 1 -->
+            <div class="music-card" data-id="1" data-title="Neon Horizon" data-artist="Cyberpunk DJ" data-audio="audio/track1.wav" data-cover="images/cover1.png" data-phone="+1 555-0199">
+                <div class="music-cover-wrapper">
+                    <img src="images/cover1.png" alt="Neon Horizon album cover">
+                    <div class="music-hover-overlay">
+                        <button class="circle-play-btn card-play-trigger" aria-label="Play Neon Horizon">
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Neon Horizon</h3>
+                    <p class="music-artist">Cyberpunk DJ</p>
+                </div>
+                <div class="music-meta">
+                    <div class="artist-phone" title="Artist contact phone">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.27 1.02l-2.2 2.2z"/></svg>
+                        <span>+1 555-0199</span>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="card-action-btn card-fav-trigger" title="Add to Favorites" aria-label="Add to Favorites">
+                            ♥
+                        </button>
+                        <a href="artist.html" class="card-action-btn" title="View Artist Profile" aria-label="View Artist Profile">
+                            👁️
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="music-card" data-id="2" data-title="Midnight Shredder" data-artist="Neon Shredder" data-audio="audio/track2.wav" data-cover="images/cover2.png" data-phone="+1 555-0245">
+                <div class="music-cover-wrapper">
+                    <img src="images/cover2.png" alt="Midnight Shredder album cover">
+                    <div class="music-hover-overlay">
+                        <button class="circle-play-btn card-play-trigger" aria-label="Play Midnight Shredder">
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Midnight Shredder</h3>
+                    <p class="music-artist">Neon Shredder</p>
+                </div>
+                <div class="music-meta">
+                    <div class="artist-phone" title="Artist contact phone">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.27 1.02l-2.2 2.2z"/></svg>
+                        <span>+1 555-0245</span>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="card-action-btn card-fav-trigger" title="Add to Favorites" aria-label="Add to Favorites">
+                            ♥
+                        </button>
+                        <a href="artist.html" class="card-action-btn" title="View Artist Profile" aria-label="View Artist Profile">
+                            👁️
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="music-card" data-id="3" data-title="Synthwave Eclipse" data-artist="Electro Shock" data-audio="audio/track3.wav" data-cover="images/cover3.png" data-phone="+1 555-0377">
+                <div class="music-cover-wrapper">
+                    <img src="images/cover3.png" alt="Synthwave Eclipse album cover">
+                    <div class="music-hover-overlay">
+                        <button class="circle-play-btn card-play-trigger" aria-label="Play Synthwave Eclipse">
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Synthwave Eclipse</h3>
+                    <p class="music-artist">Electro Shock</p>
+                </div>
+                <div class="music-meta">
+                    <div class="artist-phone" title="Artist contact phone">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.27 1.02l-2.2 2.2z"/></svg>
+                        <span>+1 555-0377</span>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="card-action-btn card-fav-trigger" title="Add to Favorites" aria-label="Add to Favorites">
+                            ♥
+                        </button>
+                        <a href="artist.html" class="card-action-btn" title="View Artist Profile" aria-label="View Artist Profile">
+                            👁️
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="no-tracks-found" style="display: none; grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-secondary);">
+                <h3>No tracks match your filter/search criteria</h3>
+                <p style="margin-top: 10px; font-size: 14px; color: var(--text-muted);">Try a different query or selection.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- --- Sticky Bottom Player Bar --- -->
+    <div class="player-bar" id="global-player-bar">
+        <div class="container player-container">
+            <!-- Track Details -->
+            <div class="player-track-info">
+                <div class="player-cover">
+                    <img id="player-track-cover" src="images/cover1.png" alt="Current Album Cover">
+                </div>
+                <div class="player-text">
+                    <div class="player-title" id="player-track-title">Song Title</div>
+                    <div class="player-artist" id="player-track-artist">Artist Name</div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="player-controls">
+                <div class="player-buttons">
+                    <button class="player-btn" id="player-prev-btn" title="Previous Track" aria-label="Previous Track">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6L18 6v12z"/></svg>
+                    </button>
+                    <button class="player-btn player-btn-main" id="player-play-btn" title="Play/Pause" aria-label="Play/Pause">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" id="player-play-icon"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="player-btn" id="player-next-btn" title="Next Track" aria-label="Next Track">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6zm9-12h2v12h-2z"/></svg>
+                    </button>
+                </div>
+                
+                <div class="player-progress-container">
+                    <span class="player-time player-time-start" id="player-time-current">0:00</span>
+                    <div class="progress-bar-bg" id="player-progress-bg">
+                        <div class="progress-bar-fill" id="player-progress-fill">
+                            <div class="progress-knob"></div>
+                        </div>
+                    </div>
+                    <span class="player-time player-time-end" id="player-time-total">0:00</span>
+                </div>
+            </div>
+
+            <!-- Additional Actions (Volume & Favorites) -->
+            <div class="player-actions">
+                <button class="card-action-btn" id="player-fav-btn" title="Toggle Favorite" aria-label="Toggle Favorite">
+                    ♥
+                </button>
+                <div class="volume-container">
+                    <svg class="volume-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    <div class="volume-slider-bg" id="player-volume-bg">
+                        <div class="volume-slider-fill" id="player-volume-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --- Footer --- -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-logo-side">
+                <a href="index.html" class="logo">
+                    <svg viewBox="0 0 32 32" aria-hidden="true" style="width: 28px; height: 28px;">
+                        <path d="M16 2C8.268 2 2 8.268 2 16v8a3 3 0 0 0 3 3h3a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H4v-1c0-6.627 5.373-12 12-12s12 5.373 12 12v1h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h3a3 3 0 0 0 3-3v-8c0-7.732-6.268-14-14-14z" />
+                    </svg>
+                    <span>MELODIX</span>
+                </a>
+                <p>Delivering high-fidelity neon rock tunes and loops. Synthesized soundscapes for creative minds.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="music.html">Music</a>
+                    <a href="artist.html">Artist</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Licensing Info</a>
+                    <a href="#">Copyright Registry</a>
+                </div>
+            </div>
+
+            <div class="footer-col footer-subscribe-side">
+                <h4>Subscribe Our Newsletter</h4>
+                <p>Stay updated on new album drops, loop kits, and live shows.</p>
+                <form class="subscribe-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter successfully!'); this.reset();">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>
+                &copy; 2026 Melodix Music. All rights reserved. Made for creators.
+            </div>
+            <div class="footer-social-links">
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="YouTube">📺</a>
+                <a href="#" aria-label="Discord">💬</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/player.js"></script>
+</body>
+</html>
